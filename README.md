@@ -4,7 +4,7 @@
 
 Cliquez sur le bouton ci-dessous pour démarrer un nouvel environnement de développement :
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/maxds-lyon/Kata-xxx.git)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/maxds-lyon/Kata-Bowling.git)
 
 Une fois que vous avez lancé l'environnement de développement, vous pouvez commencer à travailler sur le kata. Voici quelques commandes utiles que vous pourriez avoir besoin d'utiliser :
 
