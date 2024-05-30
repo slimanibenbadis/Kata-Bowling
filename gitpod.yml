@@ -6,9 +6,8 @@ ports:
 tasks:
   - init: |
       npm install
-      npm run build
     command: |
-      npm run start
+      npm run dev
 
 vscode:
   extensions:
