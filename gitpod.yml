@@ -1,0 +1,15 @@
+image: gitpod/workspace-node-18
+
+ports:
+  - port: 3000
+
+tasks:
+  - init: |
+      npm install
+      npm run build
+    command: |
+      npm run start
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
