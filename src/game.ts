@@ -10,9 +10,35 @@ export class Game {
   score(): number {
     let score = 0;
 
-    // À faire
+    function createFrames(rolls:Array<number>) {
+      let frames = [];
+      let nextRoll = 0;
+    
+      for (let i = 0; i < rolls.length; i++) {
+        let roll = rolls[i];
+        let frame = 0;
 
-    return score;
+        if (rolls[i] < 10) {
+          nextRoll = rolls[i + 1];
+
+          frame = roll + nextRoll;
+          i++;
+        }else{
+          frame = roll;
+        }
+        frames.push(frame);
+      }
+      return frames;
+    }
+
+    function calculateScore(frames:Array<number>) {
+      score = frames.reduce((a, b) => a + b, 0);
+      return score;
+    }
+
+
+
+    return calculateScore(createFrames(this.rolls));
   }
 
   // La méthode "roll" est utilisée pour enregistrer le nombre de quilles renversées lors d'un lancer.
